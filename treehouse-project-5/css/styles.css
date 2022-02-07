@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid lightgray;
+    height: 50px;
+    min-width: 30%;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.03) inset;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  padding: 10px;
+}
+
+
+.gallery {
+  display: grid;
+  max-width: 1000px;
+  min-width: 500px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  margin: auto;
+  justify-content: center;
+  padding-right: 40px;
+}
+
+.gallery img:hover {
+  transform:scale(1.1);
+  transition: 1s;
+}
+
+.search_gallery {
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+}
